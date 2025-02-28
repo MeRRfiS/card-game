@@ -1,4 +1,3 @@
-using CardTest.Managers;
 using CardTest.Managers.Interfaces;
 using UnityEngine;
 using Zenject;

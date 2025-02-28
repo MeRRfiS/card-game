@@ -1,9 +1,6 @@
-using CardTest.Managers.Interfaces;
-using CardTest.Models;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject;
 
 namespace CardTest.Cards
 {
@@ -16,14 +13,6 @@ namespace CardTest.Cards
 
         private const float FlipDuration = 0.2f;
         private const float FadeDuration = 0.2f;
-
-        private IGameManager _gameManager;
-
-        [Inject]
-        private void Construct(IGameManager gameManager)
-        {
-            _gameManager = gameManager;
-        }
 
         private void Start()
         {
